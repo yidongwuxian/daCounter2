@@ -1,0 +1,141 @@
+@import './variables.scss';
+
+// 按钮样式
+.van-button{
+	border-radius: 4PX;
+}
+//基础按钮样式
+.van-button--default.basics{
+	background: $Cff99002;
+	border-color:  $Cff99002;
+	color:$Cff9900;
+}
+.van-button--default.van-button--disabled.basics{
+	background: $Cf2f2f2;
+	border-color:  $Cf2f2f2;
+	color:$C333333;
+	opacity: 1;
+}
+//提交按钮样式
+.van-button--default.submit{
+	background: $Cff9900;
+	border-color: $Cff9900;
+	color:$Cffffff;
+}
+.van-button--default.van-button--disabled.submit{
+	background: $Cff99004;
+	border-color:  $Cff99004;
+	color:$Cffffff;
+	opacity: 1;
+}
+// 提示按钮
+.van-button--default.tip{
+	background: $Cfff2e8;
+	border-color: $Cfff2e8;
+	color:$Cff9900;
+}
+.van-field--error .van-field__control, .van-field--error .van-field__control::placeholder {
+    color: #8f9ca2;
+    -webkit-text-fill-color: currentColor;
+}
+//文字
+.van-button--default.text{
+	background: transparent;
+	border-color:  transparent;
+	padding: 0;
+}
+//默认标题
+.van-doc-demo-block__title {
+    margin: 0;
+    padding: 32px 16px 16px;
+    color: rgba(69, 90, 100, 0.6);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+input:-internal-autofill-selected{
+	background: $Cffffff !important;
+}
+
+.bottom-tip{
+	margin: 0;
+	color: rgba(69, 90, 100, 0.6);
+	line-height: 16PX;
+}
+
+//自定义展开
+.custom-collapse {
+	.van-collapse-item__content{
+		padding: 0;
+	}
+	
+	.van-hairline--top-bottom::after, .van-hairline-unset--top-bottom::after{
+		border-top:none
+	}
+	.van-cell::after{
+		border:none
+	}
+}
+//自定义上传
+.wP100 .van-uploader__input-wrapper{
+	width: 100%;
+}
+.van-grid-item__text{
+	font-size: 14px;
+}
+.van-card{
+	background: $Cffffff;
+}
+.van-tab--active {
+    font-weight: bold;
+}
+.van-tabs__line{
+	background: transparent;
+}
+.van-dialog{
+	width: 300px !important;
+}
+.van-image-preview {
+    z-index: 99999 !important;
+}
+.van-dialog{
+    z-index: 99999 !important;	
+}
+.w-e-text-container{
+	border:none !important
+}
+.w-e-text table{
+	border:none !important
+}
+.w-e-text table td, .w-e-text table th{
+	border:none !important
+}
+// 表格
+.el-table{
+   // font-size: 14PX;
+   .el-input__inner{
+		border: none;
+		// font-size: 12PX;
+		padding: 0;
+   }
+   .cell{
+	   // line-height: 1.5;
+	   padding-left: 10px;
+	   padding-right: 10px;
+   }
+   .el-button--mini, .el-button--small{
+	   // font-size: 14PX;
+   }
+}
+.el-select {
+    display: block;
+}
+.el-delList{
+	height:30px;
+	border-bottom:1px solid $Cf2f2f2;
+	font-size: 14px;
+}
+.el-form-item__content{
+	line-height: auto;
+}
